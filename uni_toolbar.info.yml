@@ -3,4 +3,9 @@ description: Enhances the Drupal toolbar for Xenyo Uni Framework sites.
 type: module
 package: Uni
 core_version_requirement: ^9 || ^10
+dependencies:
+  - admin_toolbar:admin_toolbar
+  - admin_toolbar:admin_toolbar_tools
+  - admin_toolbar:admin_toolbar_links_access_filter
+  - drupal:toolbar
 asset_autoload: true
