@@ -1,0 +1,5 @@
+{
+    "name": "xenyo/uni_toolbar",
+    "description": "Enhances the Drupal toolbar for Xenyo Uni Framework sites.",
+    "type": "drupal-custom-module"
+}

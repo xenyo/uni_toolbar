@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Implements hook_js_settings_alter().
+ */
+function uni_toolbar_js_settings_alter(&$settings) {
+  // Disable toolbar breakpoints
+  $settings['toolbar']['breakpoints'] = [
+    'toolbar.narrow' => 'all',
+    'toolbar.standard' => 'all',
+    'toolbar.wide' => 'all',
+  ];
+}
+
+/**
+ * Implements hook_toolbar_alter().
+ */
+function uni_toolbar_toolbar_alter(&$items) {
+  unset($items['coffee']);
+  unset($items['devel']);
+  unset($items['user']);
+}
